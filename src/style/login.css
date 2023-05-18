@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.login__Container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.login__banner {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #306BFF;
+}
+
+.login__banner img {
+  width: 611px;
+}
+
+.login__form {
+  width: 50%;
+  padding: 3vw 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login__form span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #E01E5A;
+  color: aliceblue;
+  padding: 2px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+.login__form h1 {
+  color: #363641;
+  margin-top: 20px;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.login__form h3 {
+  color: #363641;
+  font-weight:400;
+  width: 250px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.login__form p {
+  margin-top: 10px;
+  text-align: center;
+  color: #9D9D9D;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #9D9D9D;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input {
+  background-color: #EFEFEF;
+  border: #C6C6C6 2px solid;
+  border-radius: 6px;
+  padding: 10px 10px;
+  margin-bottom: 15px;
+}
+
+
+
+.Primary__Button {
+  background-color: #306BFF;
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 12px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.google__Button {
+  padding: 12px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 285px;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google__Button img {
+  margin-right: 10px;
+}
+
+.hr {
+  border:2px;
+}
+
+/*Medias Queries*/
+
+@media (max-width: 1200px) { 
+  .login__banner {
+    display: none;
+  }
+  .login__Container {
+    width: 100%;
+    height: 100vh;
+  }
+  .login__form {
+    width: 80%;
+  }
+}

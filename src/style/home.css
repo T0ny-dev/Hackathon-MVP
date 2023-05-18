@@ -1,0 +1,90 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.10);
+  -webkit-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.10);
+  width: 100%;
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.header__profile img {
+  border-radius: 50px;
+  margin-right: 2%;
+  width:50px;
+}
+
+.header__profile h4{
+  color: #363641;
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+}
+
+.home__menu {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+}
+
+.home__menu h2 {
+  color: #363641;
+  margin-bottom: 30px;
+}
+
+
+
+/*////////////////buttons css */
+
+.home__menu button {
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 12px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+a {
+  width: 100%;
+}
+
+.Button__manager {
+  background-color: #181F47;
+}
+
+.Button__employees {
+  background-color: #E01E5A;
+}
+
+.Button__general__employees {
+  background-color: #E0B51E;
+}
+
+@media (max-width: 600px) { 
+  .home__menu {
+    width: 80%;
+  }
+  .header__profile h4 {
+    font-size: 14px;
+  }
+}
