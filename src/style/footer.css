@@ -1,6 +1,9 @@
 .footer {
   padding: 10px auto;
   text-align: center;
+  background-color: black;
+  width: 100vw;
+  padding: 3vh 2vw;
 }
 
 .footer p {

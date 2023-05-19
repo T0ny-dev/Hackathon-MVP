@@ -8,7 +8,9 @@ function Navbar () {
   return  (
     <div className="Navbar">
       <div className="Navbar__Logo">
+        <a href="/">
         <img src="/logolaborcamp.svg" alt="" />
+        </a>
       </div>
       <div className="Navbar__link">
          <img src="Frame.png"></img>
@@ -20,7 +22,7 @@ function Navbar () {
         <a href="#">Donar</a>
       </div>
       <div className="Navbar__avatar">
-      <h4>👋 Hola!, {user.displayName || user.email}</h4>
+      <h4>Bienvenido {user.displayName || user.email}</h4>
         <img src="./avatarbear.png" alt="" />
       </div>
     </div>
