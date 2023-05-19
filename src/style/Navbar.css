@@ -1,0 +1,58 @@
+.Navbar {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-start;
+  padding: 1vh  2vw;
+  align-items: center;
+  box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.05);
+-webkit-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.05);
+-moz-box-shadow: 0px 3px 5px 3px rgba(0,0,0,0.05);
+}
+
+.Navbar__Logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+
+
+.Navbar__Logo img {
+  width: 110px;
+  margin-right: 40px;
+}
+
+.Navbar__avatar {
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+  right: -3vw;
+  top:0.5vh;
+}
+
+.Navbar__avatar img {
+  width: 13%;
+  margin-left: 15px;
+}
+
+#frame {
+  width: 24px;
+  margin-right: 0px;
+}
+
+.Navbar__link {
+  display: flex;
+  align-items: center;
+}
+
+.Navbar__link  img{
+  margin-right: 15px;
+}
+
+.Navbar__link a {
+  text-decoration: none;
+  color:#000;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 10%;
+}

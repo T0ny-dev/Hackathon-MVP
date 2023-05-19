@@ -1,18 +1,20 @@
 
-import { useAuth } from "../context/authContext";
+///import { useAuth } from "../context/authContext";
 import "../style/home.css"
 import Footer from "./Footer.jsx";
 import { Link } from "react-router-dom";
-import { Audio } from 'react-loader-spinner'
+import Navbar from "./Navbar";
+
+
 
 
 function Home () {
 
 
 
-  const {user, logout, loading} = useAuth();
+  ///const {user, logout, loading} = useAuth();
 
-
+{/*
   const handleLogout = async () =>  {
     try {
       await logout()
@@ -20,19 +22,13 @@ function Home () {
       consonle.error(error);
     }
   }
+*/}
 
   return (
     <div className="home">
+
       {/* section header */}
-      <div className="header">
-      <div className="header__profile">
-        <img src="/avatar.png" alt="avatar" />
-        <h4>👋 Hola!, {user.displayName || user.email}</h4>
-      </div>
-      <div className="header__button">
-      <button className="Primary__Button" onClick={handleLogout}>Cerrar sesion</button>
-      </div>
-      </div>
+      <Navbar/>
       {/* section menu*/}
       <div className="home__menu">
         <h2>Seleccione su Prueba</h2>
