@@ -30,16 +30,29 @@ function Register () {
   
 
   return (
-    <div>
-      {error && <p>{error}</p>}
-
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email</label>
-        <input type="email" name="email" placeholder="correo@company.com" onChange={handleChange}/>
-        <label htmlFor="password">Password</label>
-        <input type="password" name="password" id="password" onChange={handleChange} placeholder="******"/>
-        <button>Registrar</button>
-      </form>
+    <div className="login">
+      {/**this part is the Login */}
+      <div className="login__Container">
+        <div className="login__form">
+        <div className="login__form__return">
+          <a href="#">
+          <img src="./return.png" alt="" />
+          </a>
+        </div>
+        <img src="/logolaborcamp.svg" alt="" />
+        <h2>¡Bienvenido aquí comienza tu experiencia!</h2>
+        <img id="login__form__avatar"  src="orangebear.png"></img>
+        {error && <p>{error}</p>}
+        <form onSubmit={handleSubmit}>
+          <input type="email" name="email" placeholder="name@company.com" onChange={handleChange}/>
+          <input type="password" name="password" id="password" onChange={handleChange} placeholder="******"/>
+          <button className="Primary__Button">Iniciar Sesion</button>
+          <p>OR</p>
+        </form>
+        <button id="google__Button" > <img src="/google.png"
+        width={18}/></button>
+        </div>
+      </div>
     </div>
   )
 }

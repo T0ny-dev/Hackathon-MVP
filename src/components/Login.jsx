@@ -40,26 +40,26 @@ function Login () {
   
   return (
     <div className="login">
-      {/**this part is the banner section */}
-      <div className="login__banner">
-        
-      </div>
       {/**this part is the Login */}
       <div className="login__Container">
         <div className="login__form">
-        {/*<img src="/logobunisess.svg" alt="logo bunisess-center" width={200}/>*/}
-        <h1>Bienvenido! 👋</h1>
+        <div className="login__form__return">
+          <a href="#">
+          <img src="./return.png" alt="" />
+          </a>
+        </div>
+        <img src="/logolaborcamp.svg" alt="" />
+        <h2>Hola de nuevo por aquí ⛺</h2>
+        <img id="login__form__avatar"  src="avatarbear.png"></img>
         {error && <p>{error}</p>}
         <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Correo electronico</label>
           <input type="email" name="email" placeholder="name@company.com" onChange={handleChange}/>
-          <label htmlFor="password">Contraseña</label>
           <input type="password" name="password" id="password" onChange={handleChange} placeholder="******"/>
           <button className="Primary__Button">Iniciar Sesion</button>
           <p>OR</p>
         </form>
-        <button className="google__Button" onClick={handleGoogleSignin}> <img src="/google.png"
-        width={18}/> Inicia sesion con Google</button>
+        <button id="google__Button" onClick={handleGoogleSignin}> <img src="/google.png"
+        width={18}/></button>
         </div>
       </div>
     </div>

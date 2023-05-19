@@ -10,33 +10,34 @@
   height: 100%;
   display: flex;
   flex-direction: row-reverse;
+  background-image: url("bglaborcamp.svg");
 }
 
 .login__Container {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-
-.login__banner {
-  width: 50%;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #306BFF;
+  
 }
+
+
 
 .login__banner img {
   width: 611px;
 }
 
 .login__form {
-  width: 50%;
+  height: auto;
+  width: 35vw;
+  background-color: #fff;
   padding: 3vw 3vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 30px;
+  align-items: center;
 }
 
 .login__form span {
@@ -49,11 +50,22 @@
   font-size: 12px;
 }
 
-.login__form h1 {
+.login__form img {
+  width: 50%;
+
+}
+
+#login__form__avatar {
+  width: 20%;
+  margin-bottom: 2.5vh;
+}
+
+.login__form h2 {
   color: #363641;
-  margin-top: 20px;
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight:400;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .login__form h3 {
@@ -72,9 +84,19 @@
   
 }
 
+.login__form__return {
+  width: 100%;
+}
+
+.login__form__return img{
+  width: 15%;
+}
+
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 label {
@@ -89,23 +111,28 @@ input {
   border-radius: 6px;
   padding: 10px 10px;
   margin-bottom: 15px;
+  width: 75%;
 }
 
 
 
 .Primary__Button {
-  background-color: #306BFF;
+  margin-top: 10px;
+  background-color: #0062B9;
+  font-size: 18px;
   border: none;
   width: 100%;
   color: white;
   padding: 12px 12px;
   border-radius: 5px;
   cursor: pointer;
+  border-bottom: #0E416F solid 5px;
+  width: 30%;
 }
 
 
 
-.google__Button {
+#google__Button {
   padding: 12px 12px;
   border-radius: 5px;
   cursor: pointer;
@@ -117,8 +144,8 @@ input {
   justify-content: center;
 }
 
-.google__Button img {
-  margin-right: 10px;
+#google__Button img {
+width: 25%;
 }
 
 .hr {
@@ -137,5 +164,15 @@ input {
   }
   .login__form {
     width: 80%;
+  }
+}
+
+@media (max-width: 500px) { 
+  .Primary__Button {
+    width: 75%;
+    font-size: 14px;
+  }
+  .login__form__return img{
+    width: 20%;
   }
 }
