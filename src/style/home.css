@@ -14,7 +14,7 @@
 .Home__banner {
   height: 30vh;
   width: 100vw;
-  background-image: url("bannericon.png");
+  background-image: url("../../public/bannericon.png");
 }
 
 .Home__perfil {
